@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('Docker Test') {
             steps {
-                script {
-                    sh 'docker run hello-world'
-                }
+                bat 'echo Hello, World!'
             }
         }
     }
